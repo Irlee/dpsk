@@ -8,7 +8,7 @@ function Hd = bandpass100k
 % Equiripple Bandpass filter designed using the FIRPM function.
 
 % All frequency values are in kHz.
-Fs = 1000;  % Sampling Frequency
+Fs = 10000;  % Sampling Frequency
 
 Fstop1 = 70;              % First Stopband Frequency
 Fpass1 = 80;              % First Passband Frequency
