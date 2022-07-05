@@ -124,3 +124,7 @@ plot(f,P1)
 title('方波通过滤波器输出频谱')
 xlabel('f (Hz)')
 ylabel('|P1(f)|')
+
+figure(6)
+[p f]= pspectrum(S);
+plot(f,p)
