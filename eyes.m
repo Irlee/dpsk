@@ -10,7 +10,8 @@ av = abs(av);
 if(av<10e-2)
     av=10e-4;
 end
-k = find(yls>av & yls<av+5e-4, 1);
+delta = (max(y)-min(y))/nd;
+k = find(yls>av & yls<av+delta/5, 1);
 if(isempty(k))
     disp('Warning:The input vector length is too short\r\n')
     k=0;
